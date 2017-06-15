@@ -1,24 +1,20 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header';
+import Footer from './components/Footer';
 class App extends Component {
-  constructor() {
-    super();
-    this.name = 'Chase';
-  }
+
   render() {
+    var list = [
+      <Header />,
 
+    ];
     return (
-      <div className="App">
-        <div className="App-header">
-
-          <h2>lets practice react!</h2>
-        </div>
-        <p className="App-intro">
-        its {this.name}
-        </p>
-      </div>
+    <div>
+      <Header />
+      <Footer />
+    </div>
     );
   }
 }

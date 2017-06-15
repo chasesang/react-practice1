@@ -4,14 +4,15 @@ import './App.css';
 
 class App extends Component {
   render() {
+    const name = "Chase";
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+
           <h2>lets practice react!</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+        its {name};
         </p>
       </div>
     );

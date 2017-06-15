@@ -3,8 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.name = 'Chase';
+  }
   render() {
-    const name = "Chase";
+
     return (
       <div className="App">
         <div className="App-header">
@@ -12,7 +16,7 @@ class App extends Component {
           <h2>lets practice react!</h2>
         </div>
         <p className="App-intro">
-        its {name};
+        its {this.name}
         </p>
       </div>
     );
